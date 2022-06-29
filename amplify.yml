@@ -16,10 +16,10 @@ applications:
     appRoot: apps/todos
   - frontend:
     phases:
-    build:
-      commands:
-        - yarn install
-        - yarn nx build-storybook components
+      build:
+        commands:
+          - yarn install
+          - yarn nx build-storybook components
     artifacts:
       baseDirectory: ../../dist/storybook/components
       files:

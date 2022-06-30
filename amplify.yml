@@ -1,6 +1,7 @@
 version: 1
 applications:
-  - frontend:
+  - appRoot: apps/todos
+    frontend:
       phases:
         build:
           commands:
@@ -14,7 +15,8 @@ applications:
         paths:
           - node_modules/**/*
       appRoot: apps/todos
-  - frontend:
+  - appRoot: libs/components
+    frontend:
       phases:
         build:
           commands:
@@ -27,4 +29,3 @@ applications:
       cache:
         paths:
           - node_modules/**/*
-      appRoot: libs/components

@@ -14,18 +14,3 @@ applications:
       cache:
         paths:
           - node_modules/**/*
-      appRoot: apps/todos
-  - appRoot: libs/components
-    frontend:
-      phases:
-        build:
-          commands:
-            - yarn install
-            - yarn nx build-storybook components
-      artifacts:
-        baseDirectory: ../../dist/storybook/components
-        files:
-          - '**/*'
-      cache:
-        paths:
-          - node_modules/**/*
